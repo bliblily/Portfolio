@@ -53,10 +53,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
 
-/* ── PROJECT DATA ──
-   To add or edit projects, update this array.
-   Each entry maps to a folder card via data-project="index" in index.html.
-── */
+/* ── PROJECT DATA ── */
 const projects = [
   {
     title: 'UM Collaboration Room Reservation',

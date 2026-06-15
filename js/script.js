@@ -57,8 +57,9 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 const projects = [
   {
     title: 'UM Collaboration Room Reservation',
+    preview: 'images/collabroom.jpg',
     desc: 'A mock reservation system that allows students, faculty, and staff to book collaboration rooms efficiently. It features room search and booking, reservation management, role-based access, and administrative tools to reduce scheduling conflicts and improve the booking experience.',
-    tech: ['PHP', 'CSS'],
+    tech: ['PHP', 'HTML', 'CSS', 'JS'],
     features: [
       'Role-based authentication for users and administrators', 
       'Room search and instant reservation booking', 
@@ -71,6 +72,7 @@ const projects = [
   },
   {
     title: 'Integrated Salon Booking & Inventory System',
+    preview: 'images/salon.png',
     desc: 'A digital solution built to streamline salon operations through appointment scheduling, inventory monitoring, and sales tracking. It helps minimize booking errors, manage stock levels, and improve overall business efficiency.',
     tech: ['PHP', 'HTML', 'CSS', 'JavaScript'],
     features: [
@@ -85,6 +87,7 @@ const projects = [
   },
   {
     title: 'Network Intrusion Detection System',
+    preview: 'images/nids.png',
     desc: 'A cybersecurity project that uses a hybrid Random Forest–TabNet model to detect malicious network traffic. By analyzing the CICIDS-2017 dataset, the system demonstrates improved intrusion detection performance using machine learning techniques.',
     tech: ['Jupyter Notebook', 'Python', 'Machine Learning'],
     features: [
@@ -126,7 +129,10 @@ function buildModalContent(p) {
     <p class="modal-desc">${p.desc}</p>
 
     <div class="modal-preview">
-      <span class="modal-preview-placeholder">[ PREVIEW SCREENSHOT ]</span>
+      ${p.preview
+        ? `<img src="${p.preview}" alt="${p.title} preview" style="width:100%;height:100%;object-fit:cover;display:block;">`
+        : `<span class="modal-preview-placeholder">[ PREVIEW SCREENSHOT ]</span>`
+      }
     </div>
 
     <div class="modal-section-label">Technologies</div>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Pixel Edition</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ══════════════════════════
+     NAV
+══════════════════════════ -->
+<nav>
+  <a class="nav-logo" href="#hero">GEE.DEV</a>
+  <ul class="nav-links">
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#projects">University Projects</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button id="theme-toggle" title="Toggle dark mode">☀</button>
+</nav>
+
+
+<!-- ══════════════════════════
+     HERO
+══════════════════════════ -->
+<section id="hero">
+  <div class="hero-pixels" id="hero-pixels"></div>
+  <p class="hero-eyebrow">WELCOME TO MY</h1>
+  <h1 class="hero-title" data-text="PORTFOLIO">PORTFOLIO</h1>
+  <p class="hero-sub">University of Mindanao &nbsp;·&nbsp; Designer &amp; Developer</p>
+  <div class="hero-cta">
+    <a href="#projects" class="px-btn">View Projects ▸</a>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════
+     ABOUT
+══════════════════════════ -->
+<section id="about">
+  <div class="section-header reveal">
+    <span class="section-num">01 /</span>
+    <h2 class="section-title">ABOUT ME</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="about-grid">
+
+    <div>
+      <div class="pixel-avatar">
+        <img src="c:\Users\yana\Downloads\character.png" alt="Profile photo">
+      </div>
+    </div>
+
+    <div>
+      <div class="about-name reveal">GWENDOLYN LIANNA PERALTAA</div>
+      <div class="about-role reveal">UI/UX Designer · Web Developer</div>
+
+      <p class="about-intro reveal">
+        Hello! I'm a <strong>University of Mindanao</strong> student passionate about
+        creating thoughtful digital experiences. I blend design and development — building
+        interfaces that are both visually considered and technically sound.
+        <br><br>
+        Currently exploring <strong>front-end development</strong>, <strong>UI/UX design</strong>,
+        and everything in between. I love clean aesthetics, pixel art, and making things that feel
+        intentional.
+      </p>
+
+      <div class="skills-grid reveal">
+        <span class="skill-tag">HTML/CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">UI/UX</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Tailwind</span>
+        <span class="skill-tag">Adobe XD</span>
+      </div>
+
+      <div class="reveal">
+        <div class="edu-item">
+          <div class="edu-school">University of Mindanao</div>
+          <div class="edu-detail">BS Information Technology &nbsp;·&nbsp; 2022 – Present</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════
+     UNIVERSITY PROJECTS
+     data-project index must match the projects[] array in script.js
+══════════════════════════ -->
+<section id="projects">
+  <div class="section-header reveal">
+    <span class="section-num">02 /</span>
+    <h2 class="section-title">UNIVERSITY PROJECTS</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="folders-grid" id="folders-grid">
+
+    <div class="folder-card reveal" data-project="0">
+      <div class="folder-outer">
+        <div class="folder-tab"><span>PORTFOLIO SITE</span></div>
+        <div class="folder-body">
+          <svg class="folder-icon" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="6" width="32" height="20" fill="#b89458" opacity=".5"/>
+            <rect x="0" y="0" width="13" height="8"  fill="#b89458" opacity=".5"/>
+          </svg>
+          <div class="folder-proj-title">Personal Portfolio Website</div>
+          <div class="folder-proj-desc">A minimalist pixel-art themed portfolio site built to showcase university projects and skills.</div>
+          <div class="folder-tags">
+            <span class="folder-tag">HTML</span>
+            <span class="folder-tag">CSS</span>
+            <span class="folder-tag">JS</span>
+          </div>
+          <div class="folder-click-hint">CLICK TO OPEN ▸</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="folder-card reveal" data-project="1">
+      <div class="folder-outer">
+        <div class="folder-tab"><span>PIXEL PHOTOBOOTH</span></div>
+        <div class="folder-body">
+          <svg class="folder-icon" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="6" width="32" height="20" fill="#b89458" opacity=".5"/>
+            <rect x="0" y="0" width="13" height="8"  fill="#b89458" opacity=".5"/>
+          </svg>
+          <div class="folder-proj-title">Pixel Photobooth App</div>
+          <div class="folder-proj-desc">A retro pixel-art web photobooth with live webcam, countdown capture, frames, and downloadable photo strips.</div>
+          <div class="folder-tags">
+            <span class="folder-tag">HTML</span>
+            <span class="folder-tag">Canvas API</span>
+            <span class="folder-tag">WebRTC</span>
+          </div>
+          <div class="folder-click-hint">CLICK TO OPEN ▸</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="folder-card reveal" data-project="2">
+      <div class="folder-outer">
+        <div class="folder-tab"><span>UI/UX CASE STUDY</span></div>
+        <div class="folder-body">
+          <svg class="folder-icon" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="6" width="32" height="20" fill="#b89458" opacity=".5"/>
+            <rect x="0" y="0" width="13" height="8"  fill="#b89458" opacity=".5"/>
+          </svg>
+          <div class="folder-proj-title">Mobile App UX Case Study</div>
+          <div class="folder-proj-desc">End-to-end UX research and design for a campus student services mobile app — from wireframes to hi-fi prototype.</div>
+          <div class="folder-tags">
+            <span class="folder-tag">Figma</span>
+            <span class="folder-tag">UX Research</span>
+            <span class="folder-tag">Prototyping</span>
+          </div>
+          <div class="folder-click-hint">CLICK TO OPEN ▸</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="folder-card reveal" data-project="3">
+      <div class="folder-outer">
+        <div class="folder-tab"><span>DATA STRUCTURES</span></div>
+        <div class="folder-body">
+          <svg class="folder-icon" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="6" width="32" height="20" fill="#b89458" opacity=".5"/>
+            <rect x="0" y="0" width="13" height="8"  fill="#b89458" opacity=".5"/>
+          </svg>
+          <div class="folder-proj-title">Algorithm Visualizer</div>
+          <div class="folder-proj-desc">An interactive web app visualizing sorting algorithms and data structures with step-by-step pixel animations.</div>
+          <div class="folder-tags">
+            <span class="folder-tag">JavaScript</span>
+            <span class="folder-tag">CSS Animations</span>
+            <span class="folder-tag">Algorithms</span>
+          </div>
+          <div class="folder-click-hint">CLICK TO OPEN ▸</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="folder-card reveal" data-project="4">
+      <div class="folder-outer">
+        <div class="folder-tab"><span>DATABASE PROJECT</span></div>
+        <div class="folder-body">
+          <svg class="folder-icon" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="6" width="32" height="20" fill="#b89458" opacity=".5"/>
+            <rect x="0" y="0" width="13" height="8"  fill="#b89458" opacity=".5"/>
+          </svg>
+          <div class="folder-proj-title">Student Records System</div>
+          <div class="folder-proj-desc">A full-stack student information management system with CRUD operations, search, and role-based access.</div>
+          <div class="folder-tags">
+            <span class="folder-tag">PHP</span>
+            <span class="folder-tag">MySQL</span>
+            <span class="folder-tag">Bootstrap</span>
+          </div>
+          <div class="folder-click-hint">CLICK TO OPEN ▸</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="folder-card reveal" data-project="5">
+      <div class="folder-outer">
+        <div class="folder-tab"><span>CAPSTONE</span></div>
+        <div class="folder-body">
+          <svg class="folder-icon" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="6" width="32" height="20" fill="#b89458" opacity=".5"/>
+            <rect x="0" y="0" width="13" height="8"  fill="#b89458" opacity=".5"/>
+          </svg>
+          <div class="folder-proj-title">Capstone Research Project</div>
+          <div class="folder-proj-desc">Ongoing capstone project exploring design systems and accessibility in web applications.</div>
+          <div class="folder-tags">
+            <span class="folder-tag">In Progress</span>
+            <span class="folder-tag">Research</span>
+            <span class="folder-tag">Design Systems</span>
+          </div>
+          <div class="folder-click-hint">CLICK TO OPEN ▸</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════
+     CERTIFICATIONS
+══════════════════════════ -->
+<section id="certifications">
+  <div class="section-header reveal">
+    <span class="section-num">03 /</span>
+    <h2 class="section-title">CERTIFICATIONS</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="certs-grid">
+
+    <div class="cert-card reveal">
+      <div class="cert-badge">🎨</div>
+      <div class="cert-title">IT Specialist - Java</div>
+      <div class="cert-org">Certiport</div>
+      <div class="cert-date">2024</div>
+      <div class="cert-corner"></div>
+    </div>
+
+    <div class="cert-card reveal">
+      <div class="cert-badge">💻</div>
+      <div class="cert-title">IT Specialist - Databases</div>
+      <div class="cert-org">Certiport</div>
+      <div class="cert-date">2025</div>
+      <div class="cert-corner"></div>
+    </div>
+
+    <div class="cert-card reveal">
+      <div class="cert-badge">🔐</div>
+      <div class="cert-title">Introduction to Cybersecurity Certification</div>
+      <div class="cert-org">Cisco</div>
+      <div class="cert-date">2026</div>
+      <div class="cert-corner"></div>
+    </div>
+
+    <div class="cert-card reveal">
+      <div class="cert-badge">📱</div>
+      <div class="cert-title">Artificial Intelligence Fundamentals</div>
+      <div class="cert-org">IBM SkillsBuild</div>
+      <div class="cert-date">2026</div>
+      <div class="cert-corner"></div>
+    </div>
+
+    <div class="cert-card reveal">
+      <div class="cert-badge">⚡</div>
+      <div class="cert-title">Data Science Essentials With Python</div>
+      <div class="cert-org">Cisco</div>
+      <div class="cert-date">2026</div>
+      <div class="cert-corner"></div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ══════════════════════════
+     CONTACT
+══════════════════════════ -->
+<section id="contact">
+  <div class="section-header reveal">
+    <span class="section-num">04 /</span>
+    <h2 class="section-title">CONTACT</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="contact-inner">
+    <div>
+      <h3 class="contact-tagline reveal">Let's build<br>something <span>great</span><br>together.</h3>
+      <p class="contact-body reveal">Open to collaborations, internships, and interesting projects. Drop a message — I'd love to connect.</p>
+      <div class="contact-resume reveal">
+        <a href="#" class="px-btn">↓ Download Resume</a>
+      </div>
+    </div>
+
+    <div class="contact-links reveal">
+      <a href="mailto:gee@example.com" class="contact-link">
+        <div class="contact-link-icon">✉</div>
+        <div>
+          <span class="contact-link-label">EMAIL</span>
+          <span class="contact-link-value">gee@example.com</span>
+        </div>
+      </a>
+      <a href="https://linkedin.com" target="_blank" class="contact-link">
+        <div class="contact-link-icon">in</div>
+        <div>
+          <span class="contact-link-label">LINKEDIN</span>
+          <span class="contact-link-value">linkedin.com/in/gee</span>
+        </div>
+      </a>
+      <a href="https://github.com" target="_blank" class="contact-link">
+        <div class="contact-link-icon">⌥</div>
+        <div>
+          <span class="contact-link-label">GITHUB</span>
+          <span class="contact-link-value">github.com/gee</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════
+     FOOTER
+══════════════════════════ -->
+<footer>
+  <span class="footer-text">© 2025 GEE — PORTFOLIO_v1.0</span>
+  <div class="footer-pixel">
+    <div class="fp"></div>
+    <div class="fp"></div>
+    <div class="fp"></div>
+  </div>
+</footer>
+
+
+<!-- ══════════════════════════
+     FOLDER MODAL
+══════════════════════════ -->
+<div class="folder-modal-overlay" id="folder-modal-overlay">
+  <div class="folder-modal" id="folder-modal">
+    <div class="modal-titlebar">
+      <span class="modal-titlebar-name" id="modal-titlebar-name">PROJECT.TXT</span>
+      <button class="modal-close" id="modal-close">✕</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+
+<!-- Script (end of body so DOM is ready) -->
+<script src="js/script.js"></script>
+</body>
+</html>

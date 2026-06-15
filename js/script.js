@@ -59,37 +59,37 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 ── */
 const projects = [
   {
-    title: 'Personal Portfolio Website',
-    desc: 'A minimalist pixel-art themed portfolio site designed and developed from scratch to showcase university projects, certifications, and skills. Features smooth scroll reveals, interactive folder-based project browsing, and a retro gaming aesthetic.',
-    tech: ['HTML5', 'CSS3', 'JavaScript', 'Google Fonts', 'CSS Animations'],
+    title: 'UM Collaboration Room Reservation',
+    desc: 'A mock reservation system that allows students, faculty, and staff to book collaboration rooms efficiently. It features room search and booking, reservation management, role-based access, and administrative tools to reduce scheduling conflicts and improve the booking experience.',
+    tech: ['PHP', 'CSS'],
     features: [
-      'Pixel-art visual design with DotGothic16 typography',
-      'Interactive folder-style project cards',
-      'Smooth scroll-based reveal animations',
-      'Fully responsive across desktop, tablet, and mobile',
-      'Certifications showcase with achievement cards',
+      'Role-based authentication for users and administrators', 
+      'Room search and instant reservation booking', 
+      'Modify or cancel existing reservations', 
+      'Administrative room and schedule management', 
+      'Reservation confirmations and usage reporting'
     ],
     github: '#',
     demo: '#',
   },
   {
-    title: 'Pixel Photobooth App',
-    desc: 'A retro pixel-art web application that simulates a classic arcade photobooth. Users can enter through an animated curtain-opening sequence, choose from 6 themed frames, capture 4 photos via webcam with countdown timers, and download the final photo strip as a PNG.',
-    tech: ['HTML5', 'CSS3', 'JavaScript', 'Canvas API', 'WebRTC', 'getUserMedia'],
+    title: 'Integrated Salon Booking & Inventory System',
+    desc: 'A digital solution built to streamline salon operations through appointment scheduling, inventory monitoring, and sales tracking. It helps minimize booking errors, manage stock levels, and improve overall business efficiency.',
+    tech: ['PHP', 'HTML', 'CSS', 'JavaScript'],
     features: [
-      'Animated curtain-opening entrance screen',
-      '6 distinct photo strip frame themes',
-      'Live webcam capture with 3-second pixel countdown',
-      'Flash animation on photo capture',
-      'Auto-generated downloadable PNG photo strip',
+      'Appointment scheduling and booking management', 
+      'Real-time availability to prevent double-bookings', 
+      'Inventory tracking with stock alerts', 
+      'Client records and service history management', 
+      'Sales monitoring and secure user authentication' 
     ],
     github: '#',
     demo: '#',
   },
   {
-    title: 'Mobile App UX Case Study',
-    desc: 'An end-to-end UX design project for a campus student services mobile application. Covered user research, competitive analysis, information architecture, wireframing, and high-fidelity prototyping in Figma.',
-    tech: ['Figma', 'FigJam', 'User Research', 'Wireframing', 'Usability Testing'],
+    title: 'Network Intrusion Detection System',
+    desc: 'A cybersecurity project that uses a hybrid Random Forest–TabNet model to detect malicious network traffic. By analyzing the CICIDS-2017 dataset, the system demonstrates improved intrusion detection performance using machine learning techniques.',
+    tech: ['Jupyter Notebook', 'Python', 'Machine Learning'],
     features: [
       'User interviews and affinity mapping',
       'Low and high-fidelity wireframes',
@@ -98,50 +98,23 @@ const projects = [
       'Final usability testing report',
     ],
     github: null,
-    demo: '#',
+    demo: 'https://cs20-nids.streamlit.app/',
   },
   {
     title: 'Algorithm Visualizer',
     desc: 'An interactive web application that brings sorting algorithms and data structures to life through pixel-style step-by-step animations. Supports bubble sort, merge sort, quick sort, and binary search tree visualization.',
-    tech: ['Vanilla JavaScript', 'HTML5 Canvas', 'CSS Animations', 'Data Structures'],
+    tech: ['PHP', 'HTML5 Canvas', 'CSS Animations', 'Data Structures'],
     features: [
-      'Real-time visualization of sorting algorithms',
-      'Adjustable speed and array size controls',
-      'Step-by-step mode for learning',
-      'Comparison counter and swap tracker',
-      'Binary search tree insert/delete animation',
+      'Detection of malicious and benign network traffic', 
+      'Hybrid Random Forest–TabNet ensemble model', 
+      'Training and evaluation using the CICIDS-2017 dataset', 
+      'Data preprocessing and normalization pipeline', 
+      'Performance analysis using accuracy, precision, recall, and F1-score' 
     ],
     github: '#',
     demo: '#',
   },
-  {
-    title: 'Student Records System',
-    desc: 'A full-stack web application for managing student academic records. Built for a database management systems course, featuring CRUD operations, search/filter functionality, and role-based access for admin and faculty.',
-    tech: ['PHP', 'MySQL', 'Bootstrap 5', 'AJAX', 'PDO'],
-    features: [
-      'Secure login with role-based access control',
-      'Full CRUD for student profiles and grades',
-      'Dynamic search and filter across records',
-      'Grade computation and transcript generation',
-      'Responsive data tables with pagination',
-    ],
-    github: '#',
-    demo: null,
-  },
-  {
-    title: 'Capstone Research Project',
-    desc: 'An ongoing capstone project investigating the relationship between design systems and web accessibility. Research includes a comparative analysis of WCAG compliance in common component libraries, with proposed guidelines for accessible design tokens.',
-    tech: ['Research', 'Design Systems', 'WCAG 2.1', 'Figma', 'Academic Writing'],
-    features: [
-      'Systematic literature review on accessibility',
-      'Audit of 5 popular component libraries',
-      'Proposed accessible design token framework',
-      'Prototype accessible component library',
-      'Final thesis paper (in progress)',
-    ],
-    github: null,
-    demo: null,
-  },
+  
 ];
 
 

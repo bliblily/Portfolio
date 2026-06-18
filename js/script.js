@@ -67,8 +67,7 @@ const projects = [
       'Administrative room and schedule management', 
       'Reservation confirmations and usage reporting'
     ],
-    github: '#',
-    demo: '#',
+    github: 'https://github.com/airo-28/Library-Collaboration-Room-Booking-System.git',
   },
   {
     title: 'Integrated Salon Booking & Inventory System',
@@ -82,8 +81,7 @@ const projects = [
       'Client records and service history management', 
       'Sales monitoring and secure user authentication' 
     ],
-    github: '#',
-    demo: '#',
+    github: 'https://github.com/airo-28/Salon-Booking-System.git',
   },
   {
     title: 'Network Intrusion Detection System',
@@ -91,29 +89,29 @@ const projects = [
     desc: 'A cybersecurity project that uses a hybrid Random Forest–TabNet model to detect malicious network traffic. By analyzing the CICIDS-2017 dataset, the system demonstrates improved intrusion detection performance using machine learning techniques.',
     tech: ['Jupyter Notebook', 'Python', 'Machine Learning'],
     features: [
-      'User interviews and affinity mapping',
-      'Low and high-fidelity wireframes',
-      'Interactive Figma prototype',
-      'Accessibility-focused design decisions',
-      'Final usability testing report',
-    ],
-    github: null,
-    demo: 'https://cs20-nids.streamlit.app/',
-  },
-  {
-    title: 'Algorithm Visualizer',
-    desc: 'An interactive web application that brings sorting algorithms and data structures to life through pixel-style step-by-step animations. Supports bubble sort, merge sort, quick sort, and binary search tree visualization.',
-    tech: ['PHP', 'HTML5 Canvas', 'CSS Animations', 'Data Structures'],
-    features: [
       'Detection of malicious and benign network traffic', 
       'Hybrid Random Forest–TabNet ensemble model', 
       'Training and evaluation using the CICIDS-2017 dataset', 
       'Data preprocessing and normalization pipeline', 
       'Performance analysis using accuracy, precision, recall, and F1-score' 
     ],
-    github: '#',
-    demo: '#',
+    github: null,
+    demo: 'https://cs20-nids.streamlit.app/',
   },
+  // {
+  //   title: 'Algorithm Visualizer',
+  //   desc: 'An interactive web application that brings sorting algorithms and data structures to life through pixel-style step-by-step animations. Supports bubble sort, merge sort, quick sort, and binary search tree visualization.',
+  //   tech: ['PHP', 'HTML5 Canvas', 'CSS Animations', 'Data Structures'],
+  //   features: [
+  //     'Detection of malicious and benign network traffic', 
+  //     'Hybrid Random Forest–TabNet ensemble model', 
+  //     'Training and evaluation using the CICIDS-2017 dataset', 
+  //     'Data preprocessing and normalization pipeline', 
+  //     'Performance analysis using accuracy, precision, recall, and F1-score' 
+  //   ],
+  //   github: '#',
+  //   demo: '#',
+  // },
   
 ];
 
@@ -300,4 +298,14 @@ window.addEventListener('scroll', () => {
     window.addEventListener('touchend', onEnd);
   }
 
+})();
+
+// ── ID CARD FLIP ──
+(function initCardFlip() {
+  const flipper = document.getElementById('id-card-flipper');
+  if (!flipper) return;
+
+  flipper.addEventListener('click', () => {
+    flipper.classList.toggle('flipped');
+  });
 })();

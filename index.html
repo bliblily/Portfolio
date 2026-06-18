@@ -7,8 +7,9 @@
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=DMSans:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -60,32 +61,89 @@
     </div>
   </div>
 
-  <!-- Card -->
-  <div class="id-card">
-    <div class="id-card-header">
-      <span class="id-card-badge">✦ UNIVERSITY OF MINDANAO ✦</span>
-    </div>
-    <div class="id-card-photo">
-      <!-- Replace src with your actual photo -->
-      <img src="images/pic.jpg" alt="Gwen">
-    </div>
-    <div class="id-card-name">GWEN</div>
-    <div class="id-card-role">Computer Science Student</div>
-    <div class="id-card-divider"></div>
-    <div class="id-card-tags">
-      <span class="id-tag">Frontend Explorer</span>
-      <span class="id-tag">Web Developer</span>
-    </div>
-    <div class="id-card-footer">
-      <span class="id-card-dot"></span>
-      <span class="id-card-dot"></span>
-      <span class="id-card-dot"></span>
-    </div>
-  </div>
+  <!-- Flippable card -->
+  <div class="id-card-flipper" id="id-card-flipper">
 
-</div>
-</section>
+    <!-- FRONT -->
+    <div class="id-card id-card-front">
+      <div class="id-card-header">
+        <span class="id-card-badge">✦ University of Mindanao ✦</span>
+      </div>
+      <div class="id-card-photo">
+        <img src="images/pic.jpg" alt="Gwen">
+      </div>
+      <div class="id-card-name">GWEN</div>
+      <div class="id-card-role">Computer Science Student</div>
+      <div class="id-card-divider"></div>
+      <div class="id-card-tags">
+        <span class="id-tag">Frontend Explorer</span>
+        <span class="id-tag">Web Developer</span>
+      </div>
+      <div class="id-card-footer">
+        <span class="id-card-dot"></span>
+        <span class="id-card-dot"></span>
+        <span class="id-card-dot"></span>
+      </div>
+    </div>
 
+    <!-- BACK -->
+    <div class="id-card id-card-back">
+      <div class="id-back-top">
+        <div class="id-back-stripe"></div>
+      </div>
+
+
+      <!-- <div class="id-back-divider"></div> -->
+
+      <div class="id-back-status">
+        <div class="id-status-row">
+          <span class="id-status-label">STATUS</span>
+          <div class="id-status-right">
+            <span class="id-status-val">Open to work</span>
+            <span class="status-dot"></span>
+          </div>
+        </div>
+        <div class="id-status-row">
+          <span class="id-status-label">BASED IN</span>
+          <span class="id-status-val">Davao City, PH</span>
+        </div>
+        <div class="id-status-row">
+          <span class="id-status-label">FOCUS</span>
+          <span class="id-status-val">Frontend + Web Development</span>
+        </div>
+        <div class="id-status-row">
+          <span class="id-status-label">YEAR</span>
+          <span class="id-status-val">3rd Year</span>
+        </div>
+      </div>
+
+      <div class="id-back-divider"></div>
+
+      <div class="id-back-contacts">
+        <a href="mailto:g.peralta.548124@umindanao.edu.ph" class="id-contact-row">
+          <span class="id-contact-icon">✉</span>
+          <span class="id-contact-val">g.peralta.548124@umindanao.edu.ph</span>
+        </a>
+        <a href="https://github.com/bliblily" target="_blank" class="id-contact-row">
+          <span class="id-contact-icon">⌥</span>
+          <span class="id-contact-val">github.com/bliblily</span>
+        </a>
+        <a href="https://linkedin.com/in/gwenperalta" target="_blank" class="id-contact-row">
+          <span class="id-contact-icon">in</span>
+          <span class="id-contact-val">linkedin.com/in/gwenperalta</span>
+        </a>
+      </div>
+
+      <div class="id-back-divider"></div>
+
+      <div class="id-back-tagline">// let's build something</div>
+
+      <!-- <div class="id-back-bottom">
+        <div class="id-back-stripe"></div>
+      </div> -->
+    </div>
+  
+  </section>
 
 <!-- ══════════════════════════
      ABOUT
@@ -106,10 +164,10 @@
         <div class="about-name">GWENDOLYN <span class="about-name-accent">LIANNA</span> PERALTA</div>
       </div>
       <div class="about-name-right">
-        <div class="about-role-pill">
+        <!-- <div class="about-role-pill">
           <span class="role-icon">✦</span>
           UI/UX Designer
-        </div>
+        </div> -->
         <div class="about-role-pill">
           <span class="role-icon">✦</span>
           Web Developer
@@ -129,7 +187,7 @@
         <span>JavaScript</span><span class="t-sep">·</span>
         <span>Figma</span><span class="t-sep">·</span>
         <span>Python</span><span class="t-sep">·</span>
-        <span>Laravel</span><span class="t-sep">·</span>
+        <span>Github</span><span class="t-sep">·</span>
         <span>UI/UX</span><span class="t-sep">·</span>
         <span>Git</span><span class="t-sep">·</span>
         <span>Frontend Explorer</span><span class="t-sep">·</span>
@@ -139,7 +197,7 @@
         <span>JavaScript</span><span class="t-sep">·</span>
         <span>Figma</span><span class="t-sep">·</span>
         <span>Python</span><span class="t-sep">·</span>
-        <span>Laravel</span><span class="t-sep">·</span>
+        <span>Github</span><span class="t-sep">·</span>
         <span>UI/UX</span><span class="t-sep">·</span>
         <span>Git</span><span class="t-sep">·</span>
         <span>Frontend Explorer</span><span class="t-sep">·</span>
@@ -189,14 +247,18 @@
           <span class="block-label-line"></span>
         </div>
         <div class="skills-grid">
-          <span class="skill-tag">HTML/CSS</span>
-          <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">Figma</span>
-          <span class="skill-tag">UI/UX</span>
-          <span class="skill-tag">Git</span>
-          <span class="skill-tag">Github</span>
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">Laravel</span>
+        <span class="skill-tag"><i class="devicon-html5-plain"></i> HTML</span>
+        <span class="skill-tag"><i class="devicon-css3-plain"></i> CSS</span>
+        <span class="skill-tag"><i class="devicon-javascript-plain"></i> JavaScript</span>
+        <span class="skill-tag"><i class="devicon-react-original"></i> React.js</span>
+        <span class="skill-tag"><i class="devicon-figma-plain"></i> Figma</span>
+        <span class="skill-tag"><i class="devicon-figma-plain"></i> UI/UX</span>
+        <span class="skill-tag"><i class="devicon-git-plain"></i> Git</span>
+        <span class="skill-tag"><i class="devicon-github-original"></i> Github</span>
+        <span class="skill-tag"><i class="devicon-python-plain"></i> Python</span>
+        <span class="skill-tag"><i class="devicon-mysql-plain"></i> MySQL</span>
+        <span class="skill-tag"><i class="devicon-java-plain"></i> Java</span>
+        <span class="skill-tag"><i class="devicon-jupyter-plain"></i> Jupyter Notebook</span>
         </div>
       </div>
 
@@ -215,7 +277,6 @@
               <div class="edu-year">2023 – Present</div>
               <div class="edu-school">University of Mindanao</div>
               <div class="edu-course">BS in Computer Science</div>
-              <div class="edu-badge">Current</div>
             </div>
           </div>
 
@@ -225,8 +286,6 @@
               <div class="edu-year">2021 – 2023</div>
               <div class="edu-school">Catalunan Pequeno National High School</div>
               <div class="edu-course">STEM Track</div>
-              <div class="edu-badge">Senior High</div>
-            </div>
           </div>
 
         </div>
@@ -347,45 +406,45 @@
 
   <div class="certs-grid">
 
-    <div class="cert-card reveal">
+    <a class="cert-card reveal" href="https://www.credly.com/users/gwendolyn-lianna-peralta/badges/credly" target="_blank">
       <div class="cert-badge">🎨</div>
       <div class="cert-title">IT Specialist - Java</div>
       <div class="cert-org">Certiport</div>
       <div class="cert-date">2024</div>
       <div class="cert-corner"></div>
-    </div>
+    </a>
 
-    <div class="cert-card reveal">
+    <a class="cert-card reveal" href="https://www.credly.com/users/gwendolyn-lianna-peralta/badges/credly" target="_blank">
       <div class="cert-badge">💻</div>
       <div class="cert-title">IT Specialist - Databases</div>
       <div class="cert-org">Certiport</div>
       <div class="cert-date">2025</div>
       <div class="cert-corner"></div>
-    </div>
+    </a>
 
-    <div class="cert-card reveal">
+    <a class="cert-card reveal" href="https://www.credly.com/users/gwendolyn-lianna-peralta/badges/credly" target="_blank">
       <div class="cert-badge">🔐</div>
       <div class="cert-title">Introduction to Cybersecurity Certification</div>
       <div class="cert-org">Cisco</div>
       <div class="cert-date">2026</div>
       <div class="cert-corner"></div>
-    </div>
+    </a>
 
-    <div class="cert-card reveal">
+    <a class="cert-card reveal" href="https://www.credly.com/users/gwendolyn-lianna-peralta/badges/credly" target="_blank">
       <div class="cert-badge">📱</div>
       <div class="cert-title">Artificial Intelligence Fundamentals</div>
       <div class="cert-org">IBM SkillsBuild</div>
       <div class="cert-date">2026</div>
       <div class="cert-corner"></div>
-    </div>
+    </a>
 
-    <div class="cert-card reveal">
+    <a class="cert-card reveal" href="https://www.credly.com/users/gwendolyn-lianna-peralta/badges/credly" target="_blank">
       <div class="cert-badge">⚡</div>
       <div class="cert-title">Data Science Essentials With Python</div>
       <div class="cert-org">Cisco</div>
       <div class="cert-date">2026</div>
       <div class="cert-corner"></div>
-    </div>
+    </a>
 
   </div>
 </section>
@@ -405,7 +464,7 @@
   <div class="contact-inner">
     <div>
       <h3 class="contact-tagline reveal">Let's build<br>something <span>great</span><br>together.</h3>
-      <p class="contact-body reveal">Open to collaborations, internships, and interesting projects. Drop a message — I'd love to connect.</p>
+      <p class="contact-body reveal">Open to collaborations, internships, and interesting projects. <br>Drop a message — I'd love to connect.</p>
       <div class="contact-resume reveal">
         <a href="files/Resume.pdf" class="px-btn">↓ Download Resume</a>
       </div>

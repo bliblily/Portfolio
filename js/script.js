@@ -189,3 +189,115 @@ window.addEventListener('scroll', () => {
     a.style.color = a.getAttribute('href') === '#' + current ? 'var(--ink)' : '';
   });
 }, { passive: true });
+
+// ── DRAGGABLE ID CARD ──
+(function initDraggableCard() {
+  const wrap = document.getElementById('id-card-wrap');
+  if (!wrap) return;
+
+  let isDragging = false;
+  let startX, startY, originX, originY;
+  let currentX = 0, currentY = 0;
+  let velX = 0, velY = 0;
+  let lastX, lastY;
+  let animFrame;
+
+  // enable drag after animation finishes (2.6s) + small buffer
+  setTimeout(() => {
+    wrap.style.cursor = 'grab';
+    wrap.style.willChange = 'transform';
+    enableDrag();
+  }, 3000);
+
+  function getPos(e) {
+    return e.touches
+      ? { x: e.touches[0].clientX, y: e.touches[0].clientY }
+      : { x: e.clientX, y: e.clientY };
+  }
+
+  function enableDrag() {
+
+    function onStart(e) {
+      isDragging = true;
+      cancelAnimationFrame(animFrame);
+
+      const pos = getPos(e);
+      startX = pos.x - currentX;
+      startY = pos.y - currentY;
+      lastX = pos.x;
+      lastY = pos.y;
+      velX = 0;
+      velY = 0;
+
+      wrap.style.cursor = 'grabbing';
+      wrap.style.transition = 'none';
+      wrap.style.animation = 'none'; // stop swing once dragged
+      e.preventDefault();
+    }
+
+    function onMove(e) {
+      if (!isDragging) return;
+      const pos = getPos(e);
+
+      velX = pos.x - lastX;
+      velY = pos.y - lastY;
+      lastX = pos.x;
+      lastY = pos.y;
+
+      currentX = pos.x - startX;
+      currentY = pos.y - startY;
+
+      const tilt = Math.max(-20, Math.min(20, velX * 1.5));
+      wrap.style.transform = `translate(${currentX}px, ${currentY}px) rotate(${tilt}deg)`;
+    }
+
+    function onEnd() {
+      if (!isDragging) return;
+      isDragging = false;
+      wrap.style.cursor = 'grab';
+      springBack();
+    }
+
+    function springBack() {
+      const stiffness = 0.1;
+      const damping   = 0.75;
+
+      function step() {
+        velX += (0 - currentX) * stiffness;
+        velY += (0 - currentY) * stiffness;
+        velX *= damping;
+        velY *= damping;
+        currentX += velX;
+        currentY += velY;
+
+        const tilt = Math.max(-12, Math.min(12, velX * 2));
+        wrap.style.transform = `translate(${currentX}px, ${currentY}px) rotate(${tilt}deg)`;
+
+        const stillMoving =
+          Math.abs(currentX) > 0.5 || Math.abs(currentY) > 0.5 ||
+          Math.abs(velX)     > 0.2 || Math.abs(velY)     > 0.2;
+
+        if (stillMoving) {
+          animFrame = requestAnimationFrame(step);
+        } else {
+          currentX = 0;
+          currentY = 0;
+          wrap.style.transform = 'translate(0, 0) rotate(0deg)';
+        }
+      }
+
+      animFrame = requestAnimationFrame(step);
+    }
+
+    // mouse events
+    wrap.addEventListener('mousedown', onStart);
+    window.addEventListener('mousemove', onMove);
+    window.addEventListener('mouseup', onEnd);
+
+    // touch events
+    wrap.addEventListener('touchstart', onStart, { passive: false });
+    window.addEventListener('touchmove', onMove, { passive: false });
+    window.addEventListener('touchend', onEnd);
+  }
+
+})();

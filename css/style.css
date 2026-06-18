@@ -274,7 +274,7 @@ nav {
   gap: 32px;
   align-items: flex-start;   
   padding-left: 30px;     
-  padding-top: 30px;   
+  padding-top: 50px;   
   text-align: left;
 }
 
@@ -324,14 +324,16 @@ nav {
 }
 
 .hero-sub {
-  font-size: 13px;
-  letter-spacing: 3px;
-  color: var(--ink3);
+  font-size: 18px;
   animation: fadeUp .6s .2s ease both;
   text-align: left;
   max-width: 670px;
   margin-top: 10px;
   line-height: 1.9;
+  color: var(--accent);
+  letter-spacing: 5px;
+  font-family: var(--font-head);
+  padding-bottom: 50px;
 }
 
 .hero-cta {
@@ -360,35 +362,29 @@ nav {
 }
 
 .lanyard-stitch {
-  width: 14px;
+  width: 18px;
   height: 160px;
-  background: linear-gradient(
-    to right,
-    var(--ink) 0px,
-    var(--ink3) 3px,
-    var(--bg2) 5px,
-    var(--bg3) 7px,
-    var(--ink3) 9px,
-    var(--ink) 14px
-  );
-  border-radius: 3px;
-  box-shadow: 2px 0 4px rgba(0,0,0,.15), -1px 0 2px rgba(255,255,255,.08);
+  background: var(--accent);
   position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: inset -3px 0 0 rgba(0,0,0,.15), inset 3px 0 0 rgba(255,255,255,.08);
 }
+
+/* scrolling text on the strap */
 .lanyard-stitch::before {
-  content: '';
+  content: 'UNIVERSITY OF MINDANAO · UNIVERSITY OF MINDANAO · UNIVERSITY OF MINDANAO ·';
   position: absolute;
-  top: 0; bottom: 0;
+  top: 0;
   left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  background: repeating-linear-gradient(
-    to bottom,
-    rgba(255,255,255,.15) 0px,
-    rgba(255,255,255,.15) 6px,
-    transparent 6px,
-    transparent 12px
-  );
+  transform: translateX(-50%) rotate(180deg);
+  width: max-content;
+  font-family: var(--font-head);
+  font-size: 5px;
+  color: rgba(255,255,255,.5);
+  letter-spacing: 1.5px;
+  writing-mode: vertical-lr;
+  white-space: nowrap;
 }
 
 /* Clip */
